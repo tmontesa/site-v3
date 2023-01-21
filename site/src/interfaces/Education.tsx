@@ -1,5 +1,10 @@
+import { Tag } from "./Tag";
+
 export interface Education {
     educationCategories: EducationCategory[] | null;
+    schoolTitle: string | null;
+    schoolSubtitle: string | null;
+    schoolDescription: string | null;
 }
 
 export interface EducationCategory {
@@ -9,6 +14,6 @@ export interface EducationCategory {
 
 export interface EducationEntry {
     title: string;
-    description: string[] | null;
-    topics: string[] | null;
+    description: string | null;
+    tags: Tag[] | null;
 }

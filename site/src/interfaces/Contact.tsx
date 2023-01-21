@@ -1,10 +1,8 @@
+import { Link } from "./Link";
+
 export interface Contact {
     about: string | null;
     email: string | null;
-    links: ContactLink[] | null;
+    links: Link[] | null;
 }
 
-export interface ContactLink {
-    title: string | null;
-    url: string;
-}

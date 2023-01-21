@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "experience_entries",
+  "info": {
+    "singularName": "experience-entry",
+    "pluralName": "experience-entries",
+    "displayName": "ExperienceEntry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}

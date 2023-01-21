@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "educations",
+  "info": {
+    "singularName": "education",
+    "pluralName": "educations",
+    "displayName": "Education"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "education_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::education-category.education-category"
+    },
+    "school_title": {
+      "type": "string"
+    },
+    "school_subtitle": {
+      "type": "string"
+    },
+    "schoolDescription": {
+      "type": "richtext"
+    }
+  }
+}

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project-category",
     "pluralName": "project-categories",
-    "displayName": "ProjectCategory"
+    "displayName": "ProjectCategory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "project_entries": {
+    "entries": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::project-entry.project-entry"

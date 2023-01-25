@@ -4,7 +4,8 @@
   "info": {
     "singularName": "education",
     "pluralName": "educations",
-    "displayName": "Education"
+    "displayName": "Education",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,7 +23,7 @@
     "school_subtitle": {
       "type": "string"
     },
-    "schoolDescription": {
+    "school_description": {
       "type": "richtext"
     }
   }

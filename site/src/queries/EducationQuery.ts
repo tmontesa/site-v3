@@ -1,4 +1,6 @@
-export const EducationQuery = `
+import { gql } from "@apollo/client";
+
+export const EducationQuery = gql`
 query {
     education {
         data {

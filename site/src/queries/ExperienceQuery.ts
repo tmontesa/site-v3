@@ -1,4 +1,6 @@
-export const ExperienceQuery = `
+import { gql } from "@apollo/client";
+
+export const ExperienceQuery = gql`
 query {
     experience {
         data {

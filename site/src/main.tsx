@@ -2,17 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { ApolloProvider } from '@apollo/client';
+import { getApolloClient } from './apollo';
 
-const client = new ApolloClient({
-    uri: 'https://flyby-gateway.herokuapp.com/',
-    cache: new InMemoryCache(),
-});
+const CMS_API_URI: string = import.meta.env.VITE_CMS_API_URI
+const CMS_API_TOKEN: string = import.meta.env.VITE_CMS_API_TOKEN
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-
-    <ApolloProvider client={client}>
-      <App />
+    <ApolloProvider client={getApolloClient(CMS_API_URI, CMS_API_TOKEN)}>
+        <App />
     </ApolloProvider>
-
-)
+);

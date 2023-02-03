@@ -11,25 +11,25 @@ export const router = createBrowserRouter([
         errorElement: <Root />,
         children: [
             {
-              path: "/",
-              element: <ContactPage />,
+                path: "/",
+                element: <ContactPage />,
             },
             {
-              path: "/contact",
-              element: <ContactPage />,
+                path: "/contact",
+                element: <ContactPage />,
             },
             {
                 path: "/education",
                 element: <EducationPage />,
             },
             {
-              path: "/experience",
-              element: <ExperiencePage />,
+                path: "/experience",
+                element: <ExperiencePage />,
             },
             {
-              path: "/projects",
-              element: <ProjectPage />,
-            },
+                path: "/projects",
+                element: <ProjectPage />,
+            }
         ]
     }
 ]);

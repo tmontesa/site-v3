@@ -1,4 +1,4 @@
-import "../style/LinkButton.scss";
+import "../../style/Link/LinkButton.scss";
 
 type Props = {
     text: string | "";

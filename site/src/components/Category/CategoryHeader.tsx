@@ -1,4 +1,4 @@
-import "../style/CategoryHeader.scss";
+import "../../style/Category/CategoryHeader.scss";
 
 type Props = {
     text: string | "";

@@ -1,4 +1,4 @@
-import "../style/EntryDescription.scss";
+import "../../style/Entry/EntryDescription.scss";
 
 type Props = {
     text: string | "";

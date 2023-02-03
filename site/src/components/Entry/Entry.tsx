@@ -3,7 +3,7 @@ import { ITag } from "../../interfaces/ITag";
 import { EntryDescription } from "./EntryDescription";
 import { EntrySubtitle } from "./EntrySubtitle";
 import { EntryTitle } from "./EntryTitle";
-import { LinkCollection } from "../../LinkCollection";
+import { LinkCollection } from "../Link/LinkCollection";
 
 type Props = {
     title: string | null;

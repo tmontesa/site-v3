@@ -1,6 +1,6 @@
-import { IEntry } from "../interfaces/IEntry";
+import { IEntry } from "../../interfaces/IEntry";
 import { CategoryHeader } from "./CategoryHeader";
-import { EntryCollection } from "./EntryCollection";
+import { EntryCollection } from "../Entry/EntryCollection";
 
 type Props = {
     title: string | null;

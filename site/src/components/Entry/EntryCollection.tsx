@@ -1,4 +1,4 @@
-import { IEntry } from "../interfaces/IEntry";
+import { IEntry } from "../../interfaces/IEntry";
 import { Entry } from "./Entry";
 
 type Props = {

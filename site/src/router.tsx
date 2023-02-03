@@ -27,6 +27,10 @@ export const router = createBrowserRouter([
                 element: <ExperiencePage />,
             },
             {
+                path: "/project",
+                element: <ProjectPage />,
+            },
+            {
                 path: "/projects",
                 element: <ProjectPage />,
             }

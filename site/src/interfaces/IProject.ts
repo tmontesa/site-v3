@@ -1,19 +1,6 @@
-import { ITag } from "./ITag";
+import { ICategory } from "./ICategory";
 
 export interface IProject {
-    projectCategories: IProjectCategory[] | null;
+    projectCategories: ICategory[] | null;
 }
 
-export interface IProjectCategory {
-    title: string;
-    entries: IProjectEntry[] | null;
-}
-
-export interface IProjectEntry {
-    title: string;
-    subtitle: string | null;
-    description: string | null;
-    sourceUrl: string | null;
-    demoUrl: string | null;
-    tags: ITag[] | null;
-}

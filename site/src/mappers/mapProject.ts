@@ -1,7 +1,11 @@
-import { IProject, IProjectCategory, IProjectEntry } from "../interfaces/IProject";
+
+import { ICategory } from "../interfaces/ICategory";
+import { IEntry } from "../interfaces/IEntry";
+import { ILink } from "../interfaces/ILink";
+import { IProject } from "../interfaces/IProject";
 import { mapTags } from "./mapTags";
 
- export function mapProject(data: any): IProject {
+export function mapProject(data: any): IProject {
     let dataProject = data.project.data;
     let project = {
         projectCategories: []
@@ -9,31 +13,33 @@ import { mapTags } from "./mapTags";
 
     let dataProjectCategories = dataProject.attributes.project_categories.data;
     for (let c of dataProjectCategories) {
-        let projectCategory = {
+        let category = {
             title: c.attributes.title,
             entries: []
-        } as IProjectCategory;
+        } as ICategory;
 
         let dataProjectEntries = c.attributes.entries.data;
         for (let e of dataProjectEntries) {
-            let projectEntry = {
+            let entry = {
                 title: e.attributes.title,
                 subtitle: e.attributes.subtitle,
                 description: e.attributes.description,
-                sourceUrl: e.attributes.source_url,
-                demoUrl: e.attributes.demo_url,
+                links: [
+                    {title: "Link to Demo",   url: e.attributes.demo_link} as ILink,
+                    {title: "Link to Source", url: e.attributes.source_link} as ILink
+                ],
                 tags: []
-            } as IProjectEntry;
+            } as IEntry;
 
             let dataTags = e.attributes.tags.data;
-            projectEntry.tags = mapTags(dataTags);
+            entry.tags = mapTags(dataTags);
 
-            projectCategory.entries?.push(projectEntry);
+            category.entries?.push(entry);
         }
 
-        project.projectCategories?.push(projectCategory);
+        project.projectCategories?.push(category);
     }
 
     return project;
 
- }
+}

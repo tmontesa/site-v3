@@ -1,4 +1,6 @@
-import { IEducation, IEducationCategory, IEducationEntry } from "../interfaces/IEducation";
+import { ICategory } from "../interfaces/ICategory";
+import { IEducation } from "../interfaces/IEducation";
+import { IEntry } from "../interfaces/IEntry";
 import { mapTags } from "./mapTags";
 
 export function mapEducation(data: any): IEducation {
@@ -12,26 +14,28 @@ export function mapEducation(data: any): IEducation {
 
     let dataEducationCategories = dataEducation.attributes.education_categories.data;
     for (let c of dataEducationCategories) {
-        let educationCategory = {
+        let category = {
             title: c.attributes.title,
             entries: []
-        } as IEducationCategory;
+        } as ICategory;
 
         let dataEducationEntries = c.attributes.entries.data;
         for (let e of dataEducationEntries) {
-            let educationEntry = {
+            let entry = {
                 title: e.attributes.title,
+                subtitle: null,
                 description: e.attributes.description,
+                links: null,
                 tags: []
-            } as IEducationEntry
+            } as IEntry
 
             let dataTags: any[] = e.attributes.tags.data;
-            educationEntry.tags = mapTags(dataTags);
+            entry.tags = mapTags(dataTags);
 
-            educationCategory.entries?.push(educationEntry);
+            category.entries?.push(entry);
         }
 
-        education.educationCategories?.push(educationCategory);
+        education.educationCategories?.push(category);
     }
 
     return education;

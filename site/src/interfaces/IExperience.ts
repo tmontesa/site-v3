@@ -1,13 +1,6 @@
-import { ITag } from "./ITag";
+import { IEntry } from "./IEntry";
 
 export interface IExperience {
-    industryExperience: IExperienceEntry[] | null;
-    otherExperience: IExperienceEntry[] | null;
-}
-
-export interface IExperienceEntry {
-    title: string;
-    subtitle: string | null;
-    description: string | null;
-    tags: ITag[] | null;
+    industryExperience: IEntry[] | null;
+    otherExperience: IEntry[] | null;
 }

@@ -1,4 +1,6 @@
-import { IExperience, IExperienceEntry } from "../interfaces/IExperience";
+
+import { IEntry } from "../interfaces/IEntry";
+import { IExperience } from "../interfaces/IExperience";
 import { mapTags } from "./mapTags";
 
 export function mapExperience(data: any): IExperience {
@@ -10,32 +12,34 @@ export function mapExperience(data: any): IExperience {
 
     let dataIndustryExperience = dataExperience.attributes.industry_experience.data;
     for (let e of dataIndustryExperience) {
-        let experienceEntry = {
+        let entry = {
             title: e.attributes.title,
             subtitle: e.attributes.subtitle,
             description: e.attributes.description,
+            links: null,
             tags: []
-        } as IExperienceEntry;
+        } as IEntry;
 
         let dataTags = e.attributes.tags.data;
-        experienceEntry.tags = mapTags(dataTags);
+        entry.tags = mapTags(dataTags);
 
-        experience.industryExperience?.push(experienceEntry);
+        experience.industryExperience?.push(entry);
     }
 
     let dataOtherExperience = dataExperience.attributes.other_experience.data;
     for (let e of dataOtherExperience) {
-        let experienceEntry = {
+        let entry = {
             title: e.attributes.title,
             subtitle: e.attributes.subtitle,
             description: e.attributes.description,
+            links: null,
             tags: []
-        } as IExperienceEntry;
+        } as IEntry;
 
         let dataTags = e.attributes.tags.data;
-        experienceEntry.tags = mapTags(dataTags);
+        entry.tags = mapTags(dataTags);
 
-        experience.otherExperience?.push(experienceEntry);
+        experience.otherExperience?.push(entry);
     }
 
     return experience;

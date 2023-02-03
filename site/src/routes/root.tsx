@@ -1,5 +1,5 @@
-import { useQuery } from "@apollo/client";
 import { Outlet } from "react-router-dom";
+import "../style/main.scss";
 
 export default function Root() {   
     return (

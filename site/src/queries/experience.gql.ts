@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
 
-export const ExperienceQuery = gql`
+export const QUERY_EXPERIENCE = gql`
 query {
     experience {
         data {

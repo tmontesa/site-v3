@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
 
-export const EducationQuery = gql`
+export const QUERY_EDUCATION = gql`
 query {
     education {
         data {

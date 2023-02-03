@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
 
-export const ContactQuery = gql`
+export const QUERY_CONTACT = gql`
 query {
     contact {
         data {

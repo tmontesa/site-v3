@@ -1,6 +1,7 @@
 import { useQuery } from "@apollo/client";
 import { useEffect } from "react";
 import { Category } from "../components/Category/Category";
+import { Loading } from "../components/Loading";
 import { IProject } from "../interfaces/IProject";
 import { mapProject } from "../mappers/mapProject";
 import { QUERY_PROJECT } from "../queries/project.gql";
@@ -18,7 +19,7 @@ export function ProjectPage(props: Props) {
         document.title = "Timothy James Montesa | Projects"
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <Loading />;
     if (error) return <p>Error : {error.message}</p>;
     
     var project: IProject = (data != null) ? mapProject(data) : {} as IProject;

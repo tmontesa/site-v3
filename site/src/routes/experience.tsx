@@ -6,6 +6,7 @@ import { IExperience } from "../interfaces/IExperience";
 import { mapExperience } from "../mappers/mapExperience";
 import { Category } from "../components/Category/Category";
 import { useEffect } from "react";
+import { Loading } from "../components/Loading";
 
 type Props = {
     
@@ -18,7 +19,7 @@ export function ExperiencePage(props: Props) {
         document.title = "Timothy James Montesa | Experience"
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <Loading />;
     if (error) return <p>Error : {error.message}</p>;
 
     var experience: IExperience = (data != null) ? mapExperience(data) : {} as IExperience;

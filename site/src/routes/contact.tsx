@@ -7,6 +7,7 @@ import { IContact } from "../interfaces/IContact";
 import { CategoryHeader } from "../components/Category/CategoryHeader";
 import { Entry } from "../components/Entry/Entry";
 import { useEffect } from "react";
+import { Loading } from "../components/Loading";
 
 type Props = {
 
@@ -19,7 +20,7 @@ export function ContactPage(props: Props) {
         document.title = "Timothy James Montesa: Full-Stack Software Engineer & Web Dev"
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <Loading />;
     if (error) return <p>Error : {error.message}</p>;
     
     var contact: IContact = (data != null) ? mapContact(data) : {} as IContact;

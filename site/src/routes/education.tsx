@@ -7,6 +7,7 @@ import "../style/Page/Page.scss";
 import "../style/Page/EducationPage.scss";
 import { Entry } from "../components/Entry/Entry";
 import { useEffect } from "react";
+import { Loading } from "../components/Loading";
 
 type Props = {
     
@@ -19,7 +20,7 @@ export function EducationPage(props: Props) {
         document.title = "Timothy James Montesa | Education"
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <Loading />;
     if (error) return <p>Error : {error.message}</p>;
     
     var education: IEducation = (data != null) ? mapEducation(data) : {} as IEducation;

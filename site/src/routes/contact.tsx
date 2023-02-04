@@ -29,6 +29,7 @@ export function ContactPage(props: Props) {
                 links={null}
                 tags={null}
                 />
+            <div id="contact-links">
             <Entry
                 title="Contact"
                 subtitle={null}
@@ -36,15 +37,22 @@ export function ContactPage(props: Props) {
                 links={null}
                 tags={null}
                 />
-            <ul id="contact-links">
+            <table>
                 {contact.links &&
                     contact.links.map((link) =>
-                        <li>
-                            {link.title} - <a href={link.url}>{link.url}</a>
-                        </li>
+                        <tr className="item">
+                            <td className="item-title">
+                                {link.title}
+                            </td> 
+                            <td className="item-link">
+                                <a href={link.url}>{link.url}</a>
+                            </td>
+                        </tr>
                     )
                 }
-            </ul>   
+            </table>   
+
+            </div>
         </div>
     )
 }

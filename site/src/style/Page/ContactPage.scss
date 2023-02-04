@@ -1,3 +1,20 @@
 #contact-page {
     
 }
+
+#contact-links {
+
+    margin-top: 2rem;
+
+    .entryTitle {
+        margin-bottom: 1rem;
+    }
+
+    .item:not(:first-child) * {
+        padding-top: 0.5rem;
+    }
+
+    .item-title {
+        padding-right: 2rem;
+    }
+}

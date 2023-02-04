@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import { getApolloClient } from './apollo';
 import { router } from './router';
 import "./style/main.scss";
+import "./style/responsive.scss";
 
 const CMS_API_URI: string = import.meta.env.VITE_CMS_API_URI;
 const CMS_API_TOKEN: string = import.meta.env.VITE_CMS_API_TOKEN;

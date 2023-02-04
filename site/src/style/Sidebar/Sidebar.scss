@@ -31,9 +31,24 @@
     .link {
         text-decoration: none;
         color: var(--color-acc);
+        transition: color 0.3s, border-color 0.2s, letter-spacing 0.2s;
     }
 
     .link:not(:first-child) {
         margin-top: 1rem;
+    }
+
+    .link:hover {
+        color: var(--color-acc-1);
+        border-color: var(--color-acc-1);
+        letter-spacing: 0.1rem;
+        transition: color 0.1s, border-color 0.1s, letter-spacing 0.1s;
+    }
+    
+    .link:active {
+        color: var(--color-acc-d1);
+        border-color: var(--color-acc-d1);
+        letter-spacing: 0.2rem;
+        transition: color 0.1s, border-color 0.1s, letter-spacing 0.1s;
     }
 }

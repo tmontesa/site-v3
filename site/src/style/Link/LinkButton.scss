@@ -10,6 +10,8 @@
     text-decoration: none;
     border-bottom: 2px solid var(--color-acc);
     padding-bottom: 0.25rem;
+    box-sizing: border-box;
+    transition: color 0.3s, border-color 0.2s;
 }
 
 .linkButton--old {
@@ -28,4 +30,16 @@
 
 .linkButton:not(:first-child) {
     margin-left: 1rem;
+}
+
+.linkButton:hover {
+    color: var(--color-acc-1);
+    border-color: var(--color-acc-1);
+    transition: color 0.1s, border-color 0.1s;
+}
+
+.linkButton:active {
+    color: var(--color-acc-d1);
+    border-color: var(--color-acc-d1);
+    transition: color 0.1s, border-color 0.1s;
 }

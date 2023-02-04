@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
-import "../style/main.scss";
+import "../style/root.scss";
 
 export default function Root() {   
     return (
         <div id="root">
-            header
-            <Outlet />
-            footer
+            <div id="content">
+                <Outlet />
+            </div>
         </div>
     )
 }

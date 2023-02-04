@@ -32,3 +32,23 @@ li:not(:first-child) {
 p, li {
     line-height: 1.5rem;
 }
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.777rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-acc);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-body);
+}

@@ -17,4 +17,19 @@
     .item-title {
         padding-right: 2rem;
     }
+
+    a {
+        color: var(--color-acc);
+        transition: color 0.2s;
+    }
+
+    a:hover {
+        color: var(--color-acc-1);
+        transition: color 0.1s;
+    }
+
+    a:active {
+        color: var(--color-acc-d1);
+        transition: color 0.1s;
+    }
 }

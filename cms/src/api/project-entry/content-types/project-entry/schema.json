@@ -4,7 +4,8 @@
   "info": {
     "singularName": "project-entry",
     "pluralName": "project-entries",
-    "displayName": "ProjectEntry"
+    "displayName": "ProjectEntry",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -21,10 +22,10 @@
     "description": {
       "type": "richtext"
     },
-    "sourceUrl": {
+    "source_url": {
       "type": "string"
     },
-    "demoUrl": {
+    "demo_url": {
       "type": "string"
     },
     "tags": {

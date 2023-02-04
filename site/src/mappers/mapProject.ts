@@ -25,8 +25,8 @@ export function mapProject(data: any): IProject {
                 subtitle: e.attributes.subtitle,
                 description: e.attributes.description,
                 links: [
-                    {title: "Link to Demo",   url: e.attributes.demo_link} as ILink,
-                    {title: "Link to Source", url: e.attributes.source_link} as ILink
+                    {title: "Link to Demo",   url: e.attributes.demo_url} as ILink,
+                    {title: "Link to Source", url: e.attributes.source_url} as ILink
                 ],
                 tags: []
             } as IEntry;

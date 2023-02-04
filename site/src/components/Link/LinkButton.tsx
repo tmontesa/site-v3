@@ -1,14 +1,18 @@
 import "../../style/Link/LinkButton.scss";
 
 type Props = {
-    text: string | "";
+    text: string | null;
     url: string | "/";
 }
 
 export function LinkButton(props: Props) {
     return(
-        <a className="linkButton" href={props.url}>
-            {props.text}
-        </a>
+        <>
+            {props && props.text && props.url && 
+                <a className="linkButton" href={props.url}>
+                    {props.text}
+                </a>
+            }
+        </>
     )
 }

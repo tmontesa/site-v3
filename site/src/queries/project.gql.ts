@@ -15,8 +15,8 @@ query {
                                         title
                                         subtitle
                                         description
-                                        sourceUrl
-                                        demoUrl
+                                        source_url
+                                        demo_url
                                         tags {
                                             data {
                                                 attributes {

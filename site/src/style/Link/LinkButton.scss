@@ -1,4 +1,18 @@
 .linkButton {
+    color: var(--color-acc);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    font-family: var(--font-display);
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-acc);
+    padding-bottom: 0.25rem;
+}
+
+.linkButton--old {
     background: var(--color-acc);
     color: var(--color-bg);
     text-transform: uppercase;
@@ -9,8 +23,9 @@
     padding: 0.5rem 1.25rem;
     display: inline-block;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .linkButton:not(:first-child) {
-    margin-left: 0.8rem;
+    margin-left: 1rem;
 }

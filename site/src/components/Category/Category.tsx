@@ -1,6 +1,7 @@
 import { IEntry } from "../../interfaces/IEntry";
 import { CategoryHeader } from "./CategoryHeader";
 import { EntryCollection } from "../Entry/EntryCollection";
+import "../../style/Category/Category.scss";
 
 type Props = {
     title: string | null;

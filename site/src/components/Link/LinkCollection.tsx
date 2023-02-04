@@ -1,5 +1,7 @@
-import { ILink } from "../interfaces/ILink";
+import { ILink } from "../../interfaces/ILink";
 import { LinkButton } from "./LinkButton";
+import "../../style/Link/LinkCollection.scss";
+
 
 type Props = {
     links: ILink[] | null;

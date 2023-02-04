@@ -4,6 +4,7 @@ import { EntryDescription } from "./EntryDescription";
 import { EntrySubtitle } from "./EntrySubtitle";
 import { EntryTitle } from "./EntryTitle";
 import { LinkCollection } from "../Link/LinkCollection";
+import "../../style/Entry/Entry.scss";
 
 type Props = {
     title: string | null;

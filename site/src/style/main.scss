@@ -1,9 +1,32 @@
 :root {
-    --display-font: "Lexend Deca", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-    --body-font: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: "Lexend Deca", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --color-bg: #ffefef;
+    --color-body: #140101;
+    --color-acc: #8d7d7d;
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--font-body);
     font-size: 16px;
+    background: var(--color-bg);
+    color: var(--color-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+li:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+p, li {
+    line-height: 1.5rem;
 }

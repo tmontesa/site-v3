@@ -1,3 +1,11 @@
 .categoryHeader {
-    
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    background: var(--color-acc);
+    color: var(--color-bg);
 }

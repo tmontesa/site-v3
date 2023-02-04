@@ -6,6 +6,7 @@ import { Category } from "../components/Category/Category";
 import "../style/Page/Page.scss";
 import "../style/Page/EducationPage.scss";
 import { Entry } from "../components/Entry/Entry";
+import { useEffect } from "react";
 
 type Props = {
     
@@ -13,6 +14,10 @@ type Props = {
 
 export function EducationPage(props: Props) {
     const { loading, error, data } = useQuery(QUERY_EDUCATION);
+
+    useEffect(() => {
+        document.title = "Timothy James Montesa | Education"
+    }, []);
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;

@@ -10,6 +10,8 @@ const CMS_API_URI: string = import.meta.env.VITE_CMS_API_URI;
 const CMS_API_TOKEN: string = import.meta.env.VITE_CMS_API_TOKEN;
 const ROUTER = router;
 
+document.title = "Timothy James Montesa: Full-Stack Software Engineer & Web Dev";
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <ApolloProvider client={getApolloClient(CMS_API_URI, CMS_API_TOKEN)}>
         <RouterProvider router={ROUTER} />

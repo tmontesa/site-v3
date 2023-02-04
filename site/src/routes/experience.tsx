@@ -5,6 +5,7 @@ import { QUERY_EXPERIENCE } from "../queries/experience.gql";
 import { IExperience } from "../interfaces/IExperience";
 import { mapExperience } from "../mappers/mapExperience";
 import { Category } from "../components/Category/Category";
+import { useEffect } from "react";
 
 type Props = {
     
@@ -12,6 +13,10 @@ type Props = {
 
 export function ExperiencePage(props: Props) {
     const { loading, error, data } = useQuery(QUERY_EXPERIENCE);
+
+    useEffect(() => {
+        document.title = "Timothy James Montesa | Experience"
+    }, []);
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;

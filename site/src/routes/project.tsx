@@ -1,4 +1,5 @@
 import { useQuery } from "@apollo/client";
+import { useEffect } from "react";
 import { Category } from "../components/Category/Category";
 import { IProject } from "../interfaces/IProject";
 import { mapProject } from "../mappers/mapProject";
@@ -12,6 +13,10 @@ type Props = {
 
 export function ProjectPage(props: Props) {
     const { loading, error, data } = useQuery(QUERY_PROJECT);
+    
+    useEffect(() => {
+        document.title = "Timothy James Montesa | Projects"
+    }, []);
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;

@@ -6,6 +6,7 @@ import { mapContact } from "../mappers/mapContact";
 import { IContact } from "../interfaces/IContact";
 import { CategoryHeader } from "../components/Category/CategoryHeader";
 import { Entry } from "../components/Entry/Entry";
+import { useEffect } from "react";
 
 type Props = {
 
@@ -13,6 +14,10 @@ type Props = {
 
 export function ContactPage(props: Props) {
     const { loading, error, data } = useQuery(QUERY_CONTACT);
+
+    useEffect(() => {
+        document.title = "Timothy James Montesa: Full-Stack Software Engineer & Web Dev"
+    }, []);
 
     if (loading) return <p>Loading...</p>;
     if (error) return <p>Error : {error.message}</p>;

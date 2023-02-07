@@ -1,0 +1,132 @@
+@media (max-width: 1300px) {
+    .page {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        font-size: 14px;
+    }
+
+    #root #content {
+        margin-top: 4rem;
+    }
+
+    #sidebar {
+        margin-right: 1rem;
+        width: 175px;
+    }
+
+    #sidebar-title {
+        letter-spacing: 0;
+    }
+
+    #sidebar #sidebar-links {
+        margin-top: 1rem;
+    }
+
+    .page {
+        width: 600px;
+    }
+}
+
+@media (max-width: 850px) {
+    #sidebar {
+        margin-right: 1rem;
+        width: 175px;
+    }
+    
+    .page {
+        width: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+    ul {
+        padding-left: 1rem;
+    }
+
+    #root #content {
+        margin: 0;
+    }
+
+    #content {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    #sidebar {
+        width: 100%;
+        margin-left: -1rem;
+        margin-top: -1rem;
+    }
+
+    #sidebar-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidebar-title {
+        padding: 1rem;
+        background: var(--color-acc-1);
+        color: var(--color-acc-d1);
+        font-size: 1.5rem;
+        
+    }
+
+    #sidebar-subtitle {
+        display: none;
+    }
+
+    #sidebar #sidebar-links {
+        margin-top: 0;
+        background: var(--color-acc-d1);
+        padding: 1rem;
+    }
+
+    #sidebar-links .link {
+        color: var(--color-bg);
+        font-weight: normal;
+        text-align: center;
+    }
+
+    #sidebar-links .link:not(:first-child) {
+        margin-top: 0;
+        border-top: 1px solid var(--color-acc);
+        padding-top: 1rem;
+    }
+
+    #sidebar-links .link:not(:last-child) {
+        padding-bottom: 1rem;
+    }
+    
+    .page {
+        width: 100%;
+        margin-top: 6rem;
+    }
+
+    .categoryHeader {
+        padding: 0;
+        text-align: left;
+        background: none;
+        color: var(--color-acc);
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        letter-spacing: 0;
+        
+    }
+
+    .category:not(:first-of-type) {
+        padding-top: 2rem;
+        border-top: 1px solid var(--color-acc-1);
+    }
+} 
+
+@media (max-width: 450px) {
+    #sidebar-title {
+        font-size: 1rem;
+    }
+}

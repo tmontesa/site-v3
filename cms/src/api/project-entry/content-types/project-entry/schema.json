@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_entries",
+  "info": {
+    "singularName": "project-entry",
+    "pluralName": "project-entries",
+    "displayName": "ProjectEntry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "demo_url": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}

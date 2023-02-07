@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "education_entries",
+  "info": {
+    "singularName": "education-entry",
+    "pluralName": "education-entries",
+    "displayName": "EducationEntry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}

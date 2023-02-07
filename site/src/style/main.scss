@@ -1,0 +1,56 @@
+:root {
+    --font-display: "Lexend Deca", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    --font-body: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --color-bg: #ffefef;
+    --color-body: #140101;
+    --color-acc-1: #baa6a6;
+    --color-acc: #8d7d7d;
+    --color-acc-d1: #4f4848;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    background: var(--color-bg);
+    color: var(--color-body);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+li:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
+p, li {
+    line-height: 1.5rem;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.777rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-acc);
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-body);
+}

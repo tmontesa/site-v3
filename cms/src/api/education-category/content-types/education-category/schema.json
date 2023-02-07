@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "education_categories",
+  "info": {
+    "singularName": "education-category",
+    "pluralName": "education-categories",
+    "displayName": "EducationCategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::education-entry.education-entry"
+    }
+  }
+}

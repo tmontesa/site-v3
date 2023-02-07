@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "../components/Sidebar/Sidebar";
 import "../style/root.scss";
-import ScrollToTop from "../utilities/scrollToTop";
+import ScrollToTop from "../utilities/ScrollToTop";
 
 
 

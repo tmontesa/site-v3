@@ -16,7 +16,7 @@ export function ProjectPage(props: Props) {
     const { loading, error, data } = useQuery(QUERY_PROJECT);
     
     useEffect(() => {
-        document.title = "Timothy James Montesa | Projects"
+        document.title = "Timothy Montesa | Projects"
     }, []);
 
     if (loading) return <Loading />;

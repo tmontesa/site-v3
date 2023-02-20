@@ -16,7 +16,7 @@ export function ExperiencePage(props: Props) {
     const { loading, error, data } = useQuery(QUERY_EXPERIENCE);
 
     useEffect(() => {
-        document.title = "Timothy James Montesa | Experience"
+        document.title = "Timothy Montesa | Experience"
     }, []);
 
     if (loading) return <Loading />;

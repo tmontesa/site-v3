@@ -17,7 +17,7 @@ export function ContactPage(props: Props) {
     const { loading, error, data } = useQuery(QUERY_CONTACT);
 
     useEffect(() => {
-        document.title = "Timothy James Montesa: Full-Stack Software Engineer & Web Dev"
+        document.title = "Timothy Montesa: Full-Stack Engineer & Web Developer"
     }, []);
 
     if (loading) return <Loading />;

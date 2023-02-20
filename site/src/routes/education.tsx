@@ -17,7 +17,7 @@ export function EducationPage(props: Props) {
     const { loading, error, data } = useQuery(QUERY_EDUCATION);
 
     useEffect(() => {
-        document.title = "Timothy James Montesa | Education"
+        document.title = "Timothy Montesa | Education"
     }, []);
 
     if (loading) return <Loading />;

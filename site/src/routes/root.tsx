@@ -9,7 +9,7 @@ import ScrollToTop from "../utilities/ScrollToTop";
 
 export default function Root() {  
     useEffect(() => {
-        document.title = "Timothy James Montesa: Full-Stack Software Engineer & Web Dev"
+        document.title = "Timothy Montesa: Full-Stack Engineer & Web Developer"
     }, []);
 
      

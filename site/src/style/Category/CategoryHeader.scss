@@ -1,11 +1,21 @@
 .categoryHeader {
-    width: 100%;
+    display: inline-block;
     text-align: center;
     box-sizing: border-box;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
     margin-bottom: 2rem;
+    margin-left: -1rem;
     font-size: 1rem;
-    letter-spacing: 0.15rem;
-    background: var(--color-acc);
-    color: var(--color-bg);
+    color: var(--color-body);
+    font-weight: bold;
+    border-bottom: 1rem solid var(--color-acc);
+}
+
+.categoryHeader h2 {
+    margin-bottom: -1rem;
+    margin-left: -3rem;
+}
+
+.categoryHeader h2:before {
+    content: "// ";
 }

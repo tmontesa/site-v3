@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "../components/Sidebar/Sidebar";
 import "../style/root.scss";
+import "../style/fonts.scss";
 import ScrollToTop from "../utilities/ScrollToTop";
 
 

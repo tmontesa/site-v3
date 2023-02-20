@@ -44,10 +44,10 @@ export function Sidebar(props: Props) {
         <div id="sidebar">
             <div id="sidebar-content">
                 <div id="sidebar-title">
-                    Timothy James Montesa
+                    Timothy Montesa
                     <div id="sidebar-toggle">≡</div>
                 </div>
-                <div id="sidebar-subtitle">Full-Stack Software Engineer & Web Dev</div>
+                <div id="sidebar-subtitle">Full-Stack Engineer<br />&& Web Dev</div>
                 
                 <div id="sidebar-links">
                     <Link className="link" to="/">Contact</Link>

@@ -14,8 +14,8 @@
     }
 
     #sidebar {
-        margin-right: 1rem;
-        width: 175px;
+        margin-right: 3rem;
+        width: 200px;
     }
 
     #sidebar-title {
@@ -29,17 +29,31 @@
     .page {
         width: 600px;
     }
+
+    .categoryHeader {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .categoryHeader h2:before {
+        content: none;
+    }
+
+    .categoryHeader h2 {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 850px) {
-    #sidebar {
-        margin-right: 1rem;
-        width: 175px;
+    #sidebar-content {
+        background: none;
     }
     
     .page {
-        width: 500px;
+        width: 400px;
     }
+
+
 }
 
 @media (max-width: 700px) {
@@ -60,19 +74,23 @@
 
     #sidebar {
         width: 100%;
-        margin-left: -1rem;
+        padding: 0;
+        margin: 0;
+        margin-left: -2rem;
         margin-top: -1rem;
     }
 
     #sidebar-content {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
 
     #sidebar-title {
         padding: 1rem;
-        background: var(--color-acc-1);
-        color: var(--color-acc-d1);
+        background: var(--color-acc);
+        color: var(--color-body);
         font-size: 1.5rem;
         
     }
@@ -83,19 +101,23 @@
 
     #sidebar #sidebar-links {
         margin-top: 0;
-        background: var(--color-acc-d1);
+        background: var(--color-acc);
         padding: 1rem;
     }
 
     #sidebar-links .link {
-        color: var(--color-bg);
+        color: var(--color-body);
         font-weight: normal;
         text-align: center;
     }
 
+    #sidebar-links .link:before {
+        content: none;
+    }
+
     #sidebar-links .link:not(:first-child) {
         margin-top: 0;
-        border-top: 1px solid var(--color-acc);
+        border-top: 1px solid var(--color-body);
         padding-top: 1rem;
     }
 
@@ -112,9 +134,8 @@
         padding: 0;
         text-align: left;
         background: none;
-        color: var(--color-acc);
-        font-size: 1.75rem;
-        line-height: 2.5rem;
+        font-size: 1.25rem;
+        line-height: 2rem;
         letter-spacing: 0;
         
     }
@@ -128,5 +149,18 @@
 @media (max-width: 450px) {
     #sidebar-title {
         font-size: 1rem;
+    }
+
+    .linkCollection {
+        display: flex;
+        flex-direction: column;
+
+        .linkButton {
+            margin: 0;
+        }
+
+        .linkButton:not(:first-child) {
+            margin-top: 0.5rem;
+        }
     }
 }
